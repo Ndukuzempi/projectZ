@@ -17,7 +17,7 @@ function checkUserPass(){
             .errorMessage;
             var errorCode = error.errorCode;
             prompt.innerHTML = errorMessage;
-            prompt.show();
+            $("#prompt").show();
         })
 }
 
