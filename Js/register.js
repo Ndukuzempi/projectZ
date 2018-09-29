@@ -30,7 +30,8 @@ function CreateUser(){
             $(".SName").val('');
             $(".Name").val('');
             $("#prompt").show();
-            $("#loginBtn").html("<a href='index.html' style='color:white;'>Back to login</a>");
+            $("#loginBtn").hide();
+            $("#loginOverlay").append("<button onclick='out()'  id='loginBtn'>Register</button>");
             document.getElementById("prompt").innerHTML = "Account successfuly created, click on button to login";
             firebase.auth().signOut().then(function() {
                 // Sign-out successful.
@@ -55,4 +56,9 @@ function CreateUser(){
        
     }
 
+}
+
+
+function out(){
+    document.location = 'index.html';
 }

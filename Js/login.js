@@ -12,11 +12,16 @@ firebase.auth().onAuthStateChanged(function (user) {
 
         var userType = data.child(userId).child("Type").val();
         var id = data.child(userId).child("Id").val();
-        console.log(userType);
+        var name = data.child(userId).child("Name").val();
+        var email = data.child(userId).child("Email").val();
+        
+        console.log(userType, name);
 
         if (userType == "Valuator" && userId == id) {
-          $("#tab1").hide();
-          console.log("mathc");
+          
+          $("#NameCont").html(name);
+          $("#EmailCont").html(email);
+          
         }
 
       });
