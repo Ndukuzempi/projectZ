@@ -1,5 +1,7 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/index.css">
         <title>Evaluations</title>
     </head>
     <body>
@@ -7,28 +9,15 @@
         <link href="Css/index_ev.css" rel="stylesheet" />
         <link href="Css/bootstrap.css" rel="stylesheet" />
             <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
-            <script>
-              // Initialize Firebase
-              var config = {
-                apiKey: "AIzaSyDgN9tdNaJh0SFe71rZXT5zC4ixLWfSuQ0",
-                authDomain: "proj-3e49b.firebaseapp.com",
-                databaseURL: "https://proj-3e49b.firebaseio.com",
-                projectId: "proj-3e49b",
-                storageBucket: "proj-3e49b.appspot.com",
-                messagingSenderId: "512818315638"
-              };
-              firebase.initializeApp(config);
-            </script>
+           <script src="Js/evaluators.js"></script>
             <script>
                 var database = firebase.database().ref().child("guardian").child("2");
 
-                database.on('value', function(data){
-                   var name = data.child("name").val();
-                   console.log(name);
-                });
+                
             </script>
           
-                <div id="topHeader">               
+                <div id="topHeader">    
+                    <img src="Icons/menu.svg" id="menuIcon">           
                 </div>
                 <div id="subHeader">
                     <div class="row lower">
@@ -41,13 +30,16 @@
                     <label for="tab1">Add Child</label>
                     <!-- Tab 2 -->
                     <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
-                    <label for="tab2">Evauations</label>
+                    <label for="tab2"><a href="evaluations.html">Evaluators</a></label>
                     <!-- Tab 3 -->
                     <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
                     <label for="tab3"><a href="evaluators.html">Evaluators</a> </label> 
                     <!-- Tab 3 -->
                     <input type="radio" name="tabset" id="tab4" aria-controls="dunkles">
                     <label for="tab4">Host</label> 
+                </div>
+                <div id="mainComp" onload="addEvaluators(100)">
+
                 </div>
                                             
     </body>
