@@ -5,20 +5,16 @@ function render(data){
 }
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 28d4b5bd5e0bd82125ff6b5640183534e7824837
 function Register(){
     var userEmail = $("<input type='text' style='margin-top:20%;' class='email' name='Username' id='usernameInput' placeholder='Email'  required>");
     var userPass = $("<input type='password' class='pass' name='Username' id='usernamePassword' placeholder='Password*'' required>");
     var location  = $("<input type='text' class='loc' name='Username' id='usernamePassword' placeholder='Location*'' required>");
     var options = $("<select class='user' id='usernamePassword'><option selected></option><option>Guardian</option><option>Valuator</option><option>Host</option></select>");
-<<<<<<< HEAD
+
     var button = $("<button onclick='CreateUser()' >Login</button>");
-=======
+
     var button = $("<button onclick='CreateUser()' >Register</button>");
->>>>>>> 28d4b5bd5e0bd82125ff6b5640183534e7824837
+
     //
     $("#loginOverlay").html("");
     $("#loginOverlay").append(userEmail);
@@ -44,11 +40,9 @@ function CreateUser(){
         $("#prompt").hide();
         localStorage.setItem("location", location);
         localStorage.setItem("userType", userType);
-<<<<<<< HEAD
-        firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function (error) {
-=======
+
         firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).catch(function (error) {
->>>>>>> 28d4b5bd5e0bd82125ff6b5640183534e7824837
+
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
@@ -66,8 +60,7 @@ function CreateUser(){
 }
 
 
-<<<<<<< HEAD
-=======
+
 function checkUserPass(){
     var userMobile = $("#usernameInput").val();
     var userpass = $("#usernamePassword").val();
@@ -80,4 +73,4 @@ function checkUserPass(){
     }
 
 }
->>>>>>> 28d4b5bd5e0bd82125ff6b5640183534e7824837
+
