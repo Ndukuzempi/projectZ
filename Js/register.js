@@ -34,7 +34,7 @@ function CreateUser(){
             document.getElementById("prompt").innerHTML = "Account successfuly created, click on button to login";
             firebase.auth().signOut().then(function() {
                 // Sign-out successful.
-        
+                
               }).catch(function(error) {
                 // An error happened.
               });
