@@ -10,11 +10,7 @@ function Register(){
     var userPass = $("<input type='password' class='pass' name='Username' id='usernamePassword' placeholder='Password*'' required>");
     var location  = $("<input type='text' class='loc' name='Username' id='usernamePassword' placeholder='Location*'' required>");
     var options = $("<select class='user' id='usernamePassword'><option selected></option><option>Guardian</option><option>Valuator</option><option>Host</option></select>");
-
-    var button = $("<button onclick='CreateUser()' >Login</button>");
-
     var button = $("<button onclick='CreateUser()' >Register</button>");
-
     //
     $("#loginOverlay").html("");
     $("#loginOverlay").append(userEmail);
@@ -40,9 +36,7 @@ function CreateUser(){
         $("#prompt").hide();
         localStorage.setItem("location", location);
         localStorage.setItem("userType", userType);
-
         firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).catch(function (error) {
-
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
@@ -60,7 +54,6 @@ function CreateUser(){
 }
 
 
-
 function checkUserPass(){
     var userMobile = $("#usernameInput").val();
     var userpass = $("#usernamePassword").val();
@@ -73,4 +66,3 @@ function checkUserPass(){
     }
 
 }
-
