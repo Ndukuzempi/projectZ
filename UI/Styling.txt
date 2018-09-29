@@ -1,0 +1,5 @@
+orangeColorCode: #FF5E00;
+topBannerColor: #121214;
+topBannerOpacity: 0.87;
+profileSectionColor: #303032;
+profileSectionOpacity: 0.81;
