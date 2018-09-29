@@ -16,8 +16,13 @@ function checkUserPass(){
             var errorMessage = error
             .errorMessage;
             var errorCode = error.errorCode;
-            prompt.innerHTML = errorMessage;
-            prompt.show();
+            if(errorMessage == undefined){
+                prompt.innerHTML = "Please fill in all required fields";
+            }else{
+                prompt.innerHTML = errorMessage;
+            }
+            $("#prompt").show();
         })
 }
+
 

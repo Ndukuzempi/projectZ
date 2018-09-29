@@ -17,8 +17,8 @@
         </div>
         <div id='profileCont'>
             <div id='image'> </div>
-            <div id="usernameCont"><img src="images/user.png" id='userIcon'><span>Joey alpha</span></div>
-            <div id="mobileCont"><span>064 281 8841</span><img src="images/call.png" id='callIcon'></div>
+            <div id="usernameCont"><img src="images/user.png" id='userIcon'><span id='NameCont'>Username</span></div>
+            <div id="mobileCont"><span id='EmailCont'>Mobile</span><img src="images/call.png" id='callIcon'></div>
         </div>
     </div>
     <div class="tabset">
@@ -26,13 +26,13 @@
         <label for="tab1" onclick='render("Child")'>Add Child</label>
         <!-- Tab 2 -->
         <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
-        <label for="tab2" onclick='render("Evaluations")'>Evauations</label>
+        <label for="tab2"  id='tab2' onclick='render("Evaluations")'>Evauations</label>
         <!-- Tab 3 -->
         <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
-        <label for="tab3" onclick='render("Evaluator")'>Evaluators</label>
+        <label for="tab3" id='tab3' onclick='render("Evaluator")'>Evaluators</label>
         <!-- Tab 3 -->
         <input type="radio" name="tabset" id="tab4" aria-controls="dunkles">
-        <label for="tab4" onclick='render("Host")'>Host</label>
+        <label for="tab4" id='tab4' onclick='render("Host")'>Host</label>
     </div>
     <div id="mainComp">
 
