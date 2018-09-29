@@ -21,6 +21,7 @@ function CreateUser(){
             firebase.database().ref().child(userType).child(userId).child("location").set(location);
             firebase.database().ref().child(userType).child(userId).child("Name").set(Name);
             firebase.database().ref().child(userType).child(userId).child("SName").set(SName);
+            firebase.database().ref().child(userType).child(userId).child("Type").set(userType);
             
             $('.email').val('');
             $('.pass').val('');
