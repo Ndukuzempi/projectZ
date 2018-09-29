@@ -99,4 +99,9 @@ body {
     max-width: 65em;
   }
   
+  .row .lower
+  {
+    margin-bottom: 10;
+    color:#06c
+  }
   
