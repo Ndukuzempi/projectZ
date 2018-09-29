@@ -14,6 +14,32 @@ p {
   font-family: body;
 }
 
+#optionsIcon {
+  margin-right: 15px;
+  margin-top: 22px;
+  float: right;
+}
+
+#subHeader {
+  width: 100%;
+  height: 250px;
+  background: url(../images/notebook-336634_1280.jpg);
+  background-size: cover;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
+#subHeader #overlay {
+  width: 100%;
+  height: 100%;
+  background: #303032;
+  opacity: 0.81;
+}
+
+#subHeader #profileCont {
+  position: absolute;
+}
+
 #menuIcon {
   width: 35px;
   float: left;
