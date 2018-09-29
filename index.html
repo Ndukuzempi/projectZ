@@ -9,12 +9,27 @@
 <body>
     <div id="mainLoginContentBlock">
         <div id="loginOverlay">
-            <input type="text" name="Username" id='usernameInput' placeholder="Username" required>
+            <input type="text" name="Username" id='usernameInput' placeholder="Mobile"  required>
             <input type="text" name="Username" id='usernamePassword' placeholder="Password*" required>
-            <p>Or sign in with</p>
-            <button><img src="images/google-plus.png" width="30px"></button>
+            <button onclick="checkUserPass()">Login</button>
         </div>
     </div>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDgN9tdNaJh0SFe71rZXT5zC4ixLWfSuQ0",
+            authDomain: "proj-3e49b.firebaseapp.com",
+            databaseURL: "https://proj-3e49b.firebaseio.com",
+            projectId: "proj-3e49b",
+            storageBucket: "proj-3e49b.appspot.com",
+            messagingSenderId: "512818315638"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/JQuery.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
