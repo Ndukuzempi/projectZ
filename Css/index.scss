@@ -1,5 +1,5 @@
 $orangeColorCode: #FF5E00;
-$topBannerColor: #b2b2c0;
+$topBannerColor: #121214;
 $topBannerOpacity: 0.87;
 $profileSectionColor: #303032;
 $profileSectionOpacity: 0.81;
@@ -17,6 +17,14 @@ body {
 
 p{
   font-family: body;
+}
+
+#menuIcon{
+  width: 35px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 #mainLoginContentBlock {
@@ -66,4 +74,10 @@ p{
     margin-top: 20px;
   }
 
+}
+
+#topHeader{
+  width: 100%;
+  height: 70px;
+  background-color:$topBannerColor;
 }
