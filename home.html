@@ -22,37 +22,38 @@
         </div>
     </div>
     <div class="tabset">
-            <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
-            <label for="tab1" onclick='render("Child")'>Add Child</label>
-            <!-- Tab 2 -->
-            <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
-            <label for="tab2" onclick='render("Evaluations")'>Evauations</label>
-            <!-- Tab 3 -->
-            <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
-            <label for="tab3" onclick='render("Evaluator")'>Evaluators</label> 
-            <!-- Tab 3 -->
-            <input type="radio" name="tabset" id="tab4" aria-controls="dunkles">
-            <label for="tab4" onclick='render("Host")'>Host</label> 
+        <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+        <label for="tab1" onclick='render("Child")'>Add Child</label>
+        <!-- Tab 2 -->
+        <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+        <label for="tab2" onclick='render("Evaluations")'>Evauations</label>
+        <!-- Tab 3 -->
+        <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+        <label for="tab3" onclick='render("Evaluator")'>Evaluators</label>
+        <!-- Tab 3 -->
+        <input type="radio" name="tabset" id="tab4" aria-controls="dunkles">
+        <label for="tab4" onclick='render("Host")'>Host</label>
     </div>
     <div id="mainComp">
 
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
     <script>
-            // Initialize Firebase
-            var config = {
-              apiKey: "AIzaSyDgN9tdNaJh0SFe71rZXT5zC4ixLWfSuQ0",
-              authDomain: "proj-3e49b.firebaseapp.com",
-              databaseURL: "https://proj-3e49b.firebaseio.com",
-              projectId: "proj-3e49b",
-              storageBucket: "proj-3e49b.appspot.com",
-              messagingSenderId: "512818315638"
-            };
-            firebase.initializeApp(config);
-          </script>
-          <script src="js/JQuery.js"></script>
-          <script src="js/login.js"></script>
-          <script src="js/index.js"></script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDgN9tdNaJh0SFe71rZXT5zC4ixLWfSuQ0",
+            authDomain: "proj-3e49b.firebaseapp.com",
+            databaseURL: "https://proj-3e49b.firebaseio.com",
+            projectId: "proj-3e49b",
+            storageBucket: "proj-3e49b.appspot.com",
+            messagingSenderId: "512818315638"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/JQuery.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
