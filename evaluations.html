@@ -1,0 +1,43 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <!--Styling Gel-->
+        <link href="/Css/main.css" rel="stylesheet" />
+            <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+            <script>
+              // Initialize Firebase
+              var config = {
+                apiKey: "AIzaSyDgN9tdNaJh0SFe71rZXT5zC4ixLWfSuQ0",
+                authDomain: "proj-3e49b.firebaseapp.com",
+                databaseURL: "https://proj-3e49b.firebaseio.com",
+                projectId: "proj-3e49b",
+                storageBucket: "proj-3e49b.appspot.com",
+                messagingSenderId: "512818315638"
+              };
+              firebase.initializeApp(config);
+            </script>
+            <script>
+                var database = firebase.database().ref().child("guardian").child("2");
+
+                database.on('value', function(data){
+                   var name = data.child("name").val();
+                   alert(name)
+                   //console.log(name);
+                });
+            </script>
+            <div id="topHeader">
+
+
+            </div>
+            </div>
+                  <div class="sub-header">
+
+                  </div>
+                  
+                
+                  
+
+    </body>
+
+</html>
