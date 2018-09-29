@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Css/index.css">
+</head>
+
+<body>
+    <div id="mainLoginContentBlock">
+        <p id="prompt"></p>
+        <div id="loginOverlay">
+            <input type='text' style='margin-top:40;' class='Name' name='Username' id='usernameInput' placeholder='Name*'  required>
+            <input type='text' style='margin-top:40;' class='SName' name='Username' id='usernameInput' placeholder='Surname*'  required>
+            <input type='text' style='margin-top:40;' class='email' name='Username' id='usernameInput' placeholder='Email*'  required>
+            <input type='password' class='pass' name='Username' id='usernamePassword' placeholder='Password*'' required>
+            <input type='text' class='loc' name='Username' id='usernamePassword' placeholder='Location*'' required>
+            <select class='user' id='usernamePassword'><option selected></option><option>Guardian</option><option>Valuator</option><option>Host</option></select>
+            <button onclick='CreateUser()'  id='loginBtn'>Register</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDgN9tdNaJh0SFe71rZXT5zC4ixLWfSuQ0",
+            authDomain: "proj-3e49b.firebaseapp.com",
+            databaseURL: "https://proj-3e49b.firebaseio.com",
+            projectId: "proj-3e49b",
+            storageBucket: "proj-3e49b.appspot.com",
+            messagingSenderId: "512818315638"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/JQuery.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
