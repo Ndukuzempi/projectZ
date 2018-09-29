@@ -53,16 +53,19 @@ function CreateUser(){
 
 }
 
-
 function checkUserPass(){
     var userMobile = $("#usernameInput").val();
     var userpass = $("#usernamePassword").val();
-
-    if(userMobile == "" || userpass == ""){
-        alert("");
-    }else{
-
-
-    }
-
+    var prompt = document.getElementById("prompt");
+    
+   firebase.auth().signInWithEmailAndPassword(userMobile, userpass)
+    .catch(
+        function(error){
+            var errorMessage = error
+            .errorMessage;
+            var errorCode = error.errorCode;
+            prompt.innerHTML = errorMessage;
+            prompt.show();
+        })
 }
+
