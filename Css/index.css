@@ -9,4 +9,10 @@ body {
   background: url("images/notebook-336634_1280.jpg");
   background-size: cover;
 }
+#topHeader
+{
+  width: 100%;
+  height:20px;
+  background-color: dimgray;
+}
 /*# sourceMappingURL=index.css.map */
