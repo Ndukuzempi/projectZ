@@ -16,9 +16,10 @@ body {
   height: 100%;
 }
 
-p {
+p, span {
   font-family: body;
 }
+
 
 #optionsIcon {
   margin-right: 15px;
@@ -33,21 +34,54 @@ p {
   background-size: cover;
   text-align: -webkit-center;
   text-align: -moz-center;
+  position: absolute;
+  margin-top: 70px;
 
   #overlay {
     width: 100%;
     height: 250px;
     background: $profileSectionColor;
     opacity: $profileSectionOpacity;
-    position: absolute;
+    position: fixed;
 
   }
 
   #profileCont{
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background: black;
+    position: fixed;
+    width: 100%;
+    color: white;
+
+    #image{
+      width: 80px;
+      height: 80px;
+      background: hsla(0, 0%, 0%, 0.57);
+      border-radius: 200px;
+      margin-top: 30px;
+    }
+
+    #usernameCont{
+      float: left;
+      margin-left: 15px;
+      margin-top: 100px;
+    }
+
+    #mobileCont{
+      float:right;
+      margin-right: 15px;
+      margin-top: 100px;
+    }
+
+    #userIcon, #callIcon{
+      width: 20px;
+      margin-right: 5px;
+      margin-top: 5px;
+    }
+
+    #callIcon{
+      margin-right: 0px;
+      margin-left: 5px;
+    }
+
   }
 
 }
@@ -113,4 +147,6 @@ p {
   width: 100%;
   height: 70px;
   background-color: $topBannerColor;
+  position: absolute;
+  z-index: 1;
 }
