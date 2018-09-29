@@ -15,19 +15,28 @@ firebase.auth().onAuthStateChanged(function (user) {
                 firebase.database().ref().child("Guardian").child(id).child("email").set(email);
                 firebase.database().ref().child("Guardian").child(id).child("location").set(location);
                 console.log(userType);
+                localStorage.removeItem("location");
+                localStorage.removeItem("userType");
+                document.location = 'index.html';
             } else if (userType == "Valuator") {
                 firebase.database().ref().child("Valuator").child(id).child("id").set(id);
                 firebase.database().ref().child("Valuator").child(id).child("email").set(email);
                 firebase.database().ref().child("Valuator").child(id).child("location").set(location);
                 console.log(userType);
+                localStorage.removeItem("location");
+                localStorage.removeItem("userType");
+                document.location = 'index.html';
             } else {
                 firebase.database().ref().child("Host").child(id).child("id").set(id);
                 firebase.database().ref().child("Host").child(id).child("email").set(email);
                 firebase.database().ref().child("Host").child(id).child("location").set(location);
                 console.log(userType);
+                localStorage.removeItem("location");
+                localStorage.removeItem("userType");
+                document.location = 'index.html';
             }
 
-            document.location = 'home.html';
+            
 
 
         }
