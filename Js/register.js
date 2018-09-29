@@ -31,6 +31,12 @@ function CreateUser(){
             $("#prompt").show();
             $("#loginBtn").html("<a href='index.html' style='color:white;'>Back to login</a>");
             document.getElementById("prompt").innerHTML = "Account successfuly created, click on button to login";
+            firebase.auth().signOut().then(function() {
+                // Sign-out successful.
+        
+              }).catch(function(error) {
+                // An error happened.
+              });
         })
         .catch(function (error) {
             // Handle Errors here.
