@@ -3,7 +3,7 @@
     </head>
     <body>
         <!--Styling Gel-->
-        <link href="/Css/main.css" rel="stylesheet" />
+        <link href="Css/index_ev.css" rel="stylesheet" />
             <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
             <script>
               // Initialize Firebase
@@ -22,22 +22,14 @@
 
                 database.on('value', function(data){
                    var name = data.child("name").val();
-                   alert(name)
-                   //console.log(name);
+                   console.log(name);
                 });
             </script>
-            <div id="topHeader">
-
-
-            </div>
-            </div>
-                  <div class="sub-header">
-
-                  </div>
-                  
-                
-                  
-
+          
+                <div id="topHeader">               
+                </div>
+                <div class="subHeader">
+                </div> 
+                              
     </body>
-
 </html>
