@@ -3,13 +3,20 @@ $topBannerColor: #b2b2c0;
 $topBannerOpacity: 0.87;
 $profileSectionColor: #303032;
 $profileSectionOpacity: 0.81;
-
+@font-face{
+  font-family: body;
+  src: url(../Font/Roboto-Light.ttf);
+}
 
 body {
   margin: 0px;
   padding: 0px;
   width: 100%;
   height: 100%;
+}
+
+p{
+  font-family: body;
 }
 
 #mainLoginContentBlock {
@@ -51,6 +58,12 @@ body {
     border: 0px;
     border-radius: 100px;
     outline: none;
+  }
+
+  p{
+    color: white;
+    margin: 0px;
+    margin-top: 20px;
   }
 
 }

@@ -1,0 +1,64 @@
+@font-face {
+  font-family: body;
+  src: url(../Font/Roboto-Light.ttf);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-family: body;
+}
+
+#mainLoginContentBlock {
+  width: 100%;
+  height: 100%;
+  background: url("../images/notebook-336634_1280.jpg");
+  background-size: cover;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
+#mainLoginContentBlock #loginOverlay {
+  width: 100%;
+  height: 100%;
+  background: #303032;
+  opacity: 0.81;
+}
+
+#mainLoginContentBlock #usernameInput,
+#mainLoginContentBlock #usernamePassword {
+  width: 250px;
+  height: 40px;
+  padding-top: 10px;
+  margin-top: 60%;
+  background: transparent;
+  border: 0px;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+
+#mainLoginContentBlock #usernamePassword {
+  margin-top: 40px;
+}
+
+#mainLoginContentBlock button {
+  width: 250px;
+  height: 40px;
+  background: #FF5E00;
+  margin-top: 50px;
+  border: 0px;
+  border-radius: 100px;
+  outline: none;
+}
+
+#mainLoginContentBlock p {
+  color: white;
+  margin: 0px;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=index.css.map */
