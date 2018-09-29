@@ -1,10 +1,3 @@
-$orangeColorCode: #FF5E00;
-$topBannerColor: #b2b2c0;
-$topBannerOpacity: 0.87;
-$profileSectionColor: #303032;
-$profileSectionOpacity: 0.81;
-
-
 body {
   margin: 0px;
   padding: 0px;
@@ -12,22 +5,17 @@ body {
   height: 100%;
 }
 
-#mainLoginContentBlock{
+#mainLoginContentBlock {
   width: 100%;
   height: 100%;
   background: url("../images/notebook-336634_1280.jpg");
   background-size: cover;
+}
 
-#loginOverlay{
+#mainLoginContentBlock #loginOverlay {
   width: 100%;
   height: 100%;
   background: #303032;
   opacity: 0.81;
 }
-
-
-}
-
-
-
-
+/*# sourceMappingURL=index.css.map */
