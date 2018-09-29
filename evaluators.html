@@ -19,15 +19,8 @@
               };
               firebase.initializeApp(config);
             </script>
-            <script>
-                var database = firebase.database().ref().child("guardian").child("2");
-
-                database.on('value', function(data){
-                   var name = data.child("name").val();
-                   console.log(name);
-                });
-            </script>
-          
+           
+          <script src="Js/evaluators.js"></script>
                 <div id="topHeader">  
                    <img src="Icons/menu.svg" id="menuIcon">             
                 </div>
@@ -50,7 +43,11 @@
                     <input type="radio" name="tabset" id="tab4" aria-controls="dunkles">
                     <label for="tab4">Host</label> 
                 </div>
-                
+         <div class="row" id="items">
+             <div class="col-sm-4">
+
+             </div>
+         </div>       
                                             
     </body>
 </html>
